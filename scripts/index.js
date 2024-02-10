@@ -1,4 +1,4 @@
-window.onload = function callAllFunctions() {
+window.onload = () => {
     paintHexadecimalColorSample();
 }
 
