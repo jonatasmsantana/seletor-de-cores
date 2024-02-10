@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +10,72 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     
     <link rel="stylesheet" href="./css/styles.css">
+
     <script src="./scripts/index.js" defer></script>
 
     <title>Seletor de cores</title>
 
 </head>
+
 <body>
-    
+
+    <div class="content-container">
+
+        <header>
+            <h1>Seletor de cores</h1>
+        </header>
+
+        <div class="color-cards-container">
+
+            <div class="color-card" id="hexadecimal-card">
+                <div class="hexadecimal-code-and-color-container">
+                    <p id="hexadecimal-code" class="color-code">#??????</p>
+                    <div class="color-sample" id="hexadecimal-color-sample"></div>
+                </div>
+                <div class="ranges-container">
+                    <div class="color-range-container">
+                        <label for="hexadecimal-red-bar" title="red">r</label>
+                        <span class="min-value">0</span>
+                        <input type="range" name="" id="hexadecimal-red-bar-1" min="0" max="15" onchange="paintHexadecimalColorSample()">
+                        <span class="max-value">f</span>
+                    </div>
+                    <div class="color-range-container">
+                        <label for="hexadecimal-red-bar" title="red">r</label>
+                        <span class="min-value">0</span>
+                        <input type="range" name="" id="hexadecimal-red-bar-2" min="0" max="15" onchange="paintHexadecimalColorSample()">
+                        <span class="max-value">f</span>
+                    </div>
+                    <div class="color-range-container">
+                        <label for="hexadecimal-red-bar" title="red">g</label>
+                        <span class="min-value">0</span>
+                        <input type="range" name="" id="hexadecimal-green-bar-1" min="0" max="15" onchange="paintHexadecimalColorSample()">
+                        <span class="max-value">f</span>
+                    </div>
+                    <div class="color-range-container">
+                        <label for="hexadecimal-red-bar" title="red">g</label>
+                        <span class="min-value">0</span>
+                        <input type="range" name="" id="hexadecimal-green-bar-2" min="0" max="15" onchange="paintHexadecimalColorSample()">
+                        <span class="max-value">f</span>
+                    </div>
+                    <div class="color-range-container">
+                        <label for="hexadecimal-red-bar" title="red">b</label>
+                        <span class="min-value">0</span>
+                        <input type="range" name="" id="hexadecimal-blue-bar-1" min="0" max="15" onchange="paintHexadecimalColorSample()">
+                        <span class="max-value">f</span>
+                    </div>
+                    <div class="color-range-container">
+                        <label for="hexadecimal-red-bar" title="red">b</label>
+                        <span class="min-value">0</span>
+                        <input type="range" name="" id="hexadecimal-blue-bar-2" min="0" max="15" onchange="paintHexadecimalColorSample()">
+                        <span class="max-value">f</span>
+                    </div>
+
+                </div>
+            </div>            
+
+        </div>
+        <footer></footer>
+
+    </div>
 </body>
 </html>
