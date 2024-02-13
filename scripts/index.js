@@ -30,17 +30,12 @@ function paintHexadecimalColorSample(){
     document.querySelector("#hexadecimal-blue-bar-1").title = blueHexaValue1;
     document.querySelector("#hexadecimal-blue-bar-2").title = blueHexaValue2;
 
-    var hexadecimalCode = document.querySelector("#hexadecimal-code");
+    let hexadecimalCode = document.querySelector("#hexadecimal-code");
 
     hexadecimalCode.textContent = "#" + redHexaValue1 + redHexaValue2 +
     greenHexaValue1 + greenHexaValue2+blueHexaValue1+blueHexaValue2;
     
-    var hexadecimalColorSample = document.querySelector("#hexadecimal-color-sample");
+    let hexadecimalColorSample = document.querySelector("#hexadecimal-color-sample");
     
-    hexadecimalColorSample.style.backgroundColor = hexadecimalCode.textContent;
-
-    console.log(hexadecimalCode);
-
-    
-
+    hexadecimalColorSample.style.backgroundColor = hexadecimalCode.textContent;   
 }
